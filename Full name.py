@@ -1,8 +1,8 @@
 
 import re
 User_name = input("Please enter full name: ")
-if not re.match("^[a-zA-Z0-9]{1,30}(?: [a-zA-Z0-9]+)?(?: [a-zA-Z0-9]+)?$", User_name):
-    print("Error! invalid email")
+if not re.match(r"^([A-Za-z\d]+)( [A-Za-z\d]+)( [A-Za-z\d]+)$", User_name):
+    print("Error! invalid user name")
 else:
   print("Your full name is " + User_name)
 
